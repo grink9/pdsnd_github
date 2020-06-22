@@ -158,23 +158,21 @@ def user_stats(df):
     print('Here are the user types:\n', user_types)
 
     # Display counts of gender
-    if 'Gender' not in df.columns:
-        return
-    gender = df['Gender'].values
-    gender = Counter(gender)
-    gender = pd.Series(gender)
-    print('Breakdown by gender:\n', gender)
+    if 'Gender' in df.columns:
+        gender = df['Gender'].values
+        gender = Counter(gender)
+        gender = pd.Series(gender)
+        print('Breakdown by gender:\n', gender)
 
     # Display earliest, most recent, and most common year of birth
-    if 'Birth Year' not in df.columns:
-        return
-    earliest_birth = df['Birth Year'].max()
-    recent_birth = df['Birth Year'].min()
-    common_birth = df['Birth Year'].mode()
-    print('\nHere is a look at some age information!\n')
-    print('Earliest birth year: ', earliest_birth)
-    print('Most recent birth year: ', recent_birth)
-    print('Most common birth year: ', common_birth)
+    if 'Birth Year' in df.columns:
+        earliest_birth = df['Birth Year'].max()
+        recent_birth = df['Birth Year'].min()
+        common_birth = df['Birth Year'].mode()
+        print('\nHere is a look at some age information!\n')
+        print('Earliest birth year: ', earliest_birth)
+        print('Most recent birth year: ', recent_birth)
+        print('Most common birth year: ', common_birth)
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
