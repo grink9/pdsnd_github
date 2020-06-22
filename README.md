@@ -5,7 +5,7 @@ Project created on June 15, 2020
 README file created on June 22, 2020
 
 ### Description
-Interactive environment, written in Python,  that allows users to choose the data they would like to explore.  Users can interact with data from three different US cities, filter by various months and days of the week.  Program will return variety of statistics for given selects such as trip duration, most popular bikeshare stations and most frequent times of travel.  Program also allows users to see the raw data used for calulations.
+Interactive environment, written in Python,  that allows users to choose the data they would like to explore.  Users can interact with data from three different US cities, filter by various months and days of the week.  Program will return variety of statistics for given selects such as trip duration, most popular bikeshare stations and most frequent times of travel.  Bikeshare data includes some demographic information for subscribers to their platform. Program also allows users to see the raw data used for calculations. 
 
 ### Files used
 - chicago.csv
