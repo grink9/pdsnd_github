@@ -1,15 +1,16 @@
-### Date created
-Include the date you created this project and README file.
+# Exploring US Bikeshare Data
 
-### Project Title
-Replace the Project Title
+### Date created
+- Project created on June 15, 2020
+- README file created on June 22, 2020
 
 ### Description
-Describe what your project is about and what it does
+Interactive environment, written in Python,  that allows users to choose the data they would like to explore.  Users can interact with data from three different US cities, filter by various months and days of the week.  Program will return variety of statistics for given selects such as trip duration, most popular bikeshare stations and most frequent times of travel.  Bikeshare data includes some demographic information for subscribers to their platform. Program also allows users to see the raw data used for calculations.
 
 ### Files used
-Include the files used
+- chicago.csv
+- new_york_city.csv
+- washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Project inspired by Udacity's [Programing for Data Science](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104) Nanodegree

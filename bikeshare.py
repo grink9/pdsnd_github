@@ -157,14 +157,14 @@ def user_stats(df):
     user_types = pd.Series(user_types)
     print('Here are the user types:\n', user_types)
 
-    # Display counts of gender
+    # Display counts of gender and checks for non existent column
     if 'Gender' in df.columns:
         gender = df['Gender'].values
         gender = Counter(gender)
         gender = pd.Series(gender)
         print('Breakdown by gender:\n', gender)
 
-    # Display earliest, most recent, and most common year of birth
+    # Display earliest, most recent, and most common year of birth and checks non-existent column
     if 'Birth Year' in df.columns:
         earliest_birth = int(df['Birth Year'].max())
         recent_birth = int(df['Birth Year'].min())
@@ -173,7 +173,6 @@ def user_stats(df):
         print('Earliest birth year: ', earliest_birth)
         print('Most recent birth year: ', recent_birth)
         print('Most common birth year: ', common_birth)
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
